@@ -9,13 +9,13 @@ def count_th(word):
     idx = word.find("th")
     # if found
     if idx > -1: 
-        #   set ths to 1
+        # set ths to 1
         ths = 1
-        #   remove everything to "th" inclusive
+        # remove everything to "th" inclusive
         word = word[idx + 2:]
-        #   pass the remaining word to itself and add returned value to ths
+        # pass the remaining word to itself and add returned value to ths
         ths += count_th(word)
-        #   return ths
+        # return ths
         return ths
     # return 0
     return 0
